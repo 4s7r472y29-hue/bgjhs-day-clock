@@ -23,12 +23,12 @@
  <div class="cards"><div class="card"><div class="small">Up next</div><div id="nextBlock" class="big">—</div></div><div class="card"><div class="small">Status</div><div id="statusText" class="big">—</div></div></div>
  <div id="lunchBox" class="notice"><h3>5th Period Lunch Times</h3><div id="lunchRows"></div></div>
  <div id="dismissalBox" class="notice"><h3>Dismissal</h3><div id="dismissalRows"></div></div>
- <div class="footnote">Pickup countdown uses custom leave times for each period.</div>
+ <div class="footnote">Pickup countdown is set to 8 minutes before the end of periods 1–6.</div>
 </section>
 <section id="routeView" class="view"><div class="route-head"><h2 class="route-title">Student Route</h2><div class="sub">Swipe the stops or use the arrow buttons.</div></div><div id="routeNow" class="route-now"></div><div id="routeBoard" class="route-board"></div></section>
 </main>
 <script>
-const LEAVE_BY_PERIOD={1:4,2:5,3:6,4:5,5:6,6:8};
+const LEAVE_BY_PERIOD={1:8,2:8,3:8,4:8,5:8,6:8};
 const schedule=[{name:'WIN AM',start:'07:30',end:'07:40',pickup:false},{name:'1st Period',start:'07:43',end:'08:33',pickup:true},{name:'2nd Period',start:'08:36',end:'09:26',pickup:true},{name:'3rd Period',start:'09:29',end:'10:19',pickup:true},{name:'4th Period',start:'10:22',end:'11:12',pickup:true},{name:'5th Period',start:'11:15',end:'12:45',pickup:true,note:'Lunch block'},{name:'6th Period',start:'12:48',end:'13:38',pickup:true},{name:'WIN PM',start:'13:43',end:'14:20',pickup:false}];
 const lunches=[['11:15','1st Lunch'],['11:41','2nd Lunch'],['12:07','3rd Lunch']];
 const dismissals=[['14:20','6th Grade Hall'],['14:23','7th Grade Hall'],['14:25','8th Grade Hall'],['14:30','Car riders, clubs, athletic bus, athletic practice, homework help']];
